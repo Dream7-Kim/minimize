@@ -1,0 +1,167 @@
+dream7@dream7-OMEN-by-HP-Laptop-15-dc1xxx:~/minimize$ python3 grad_w.py 
+------------------ BFGS ------------------
+Warning: Desired error not necessarily achieved due to precision loss.
+         Current function value: nan
+         Iterations: 1
+         Function evaluations: 8
+         Gradient evaluations: 8
+opt res: [-1.0058]
+opt res Hessian: [[1]]
+
+
+
+
+dream7@dream7-OMEN-by-HP-Laptop-15-dc1xxx:~/minimize$ python3 grad_w.py 
+Optimization terminated successfully.
+         Current function value: -11796196.325541
+         Iterations: 21
+         Function evaluations: 42
+dream7@dream7-OMEN-by-HP-Laptop-15-dc1xxx:~/minimize$ python3 grad_w.py 
+Optimization terminated successfully.
+         Current function value: -11796196.325541
+         Iterations: 21
+         Function evaluations: 42
+[0.00179848]
+dream7@dream7-OMEN-by-HP-Laptop-15-dc1xxx:~/minimize$ python3 grad_w.py 
+Optimization terminated successfully.
+         Current function value: -11796196.325541
+         Iterations: 21
+         Function evaluations: 42
+[0.00179848]
+dream7@dream7-OMEN-by-HP-Laptop-15-dc1xxx:~/minimize$ python3 grad_w.py 
+grad_w.py:141: OptimizeWarning: Unknown solver options: xtol
+  res = opt.minimize(model, x0, method='BFGS', jac=grad, options={'xtol': 1e-8, 'disp': True})
+Warning: Desired error not necessarily achieved due to precision loss.
+         Current function value: nan
+         Iterations: 1
+         Function evaluations: 5
+         Gradient evaluations: 5
+[-1.0058]
+dream7@dream7-OMEN-by-HP-Laptop-15-dc1xxx:~/minimize$ python3 grad_w.py 
+grad_w.py:141: OptimizeWarning: Unknown solver options: xtol
+  res = opt.minimize(model, x0, method='CG', jac=grad, options={'xtol': 1e-8, 'disp': True})
+Warning: Desired error not necessarily achieved due to precision loss.
+         Current function value: nan
+         Iterations: 1
+         Function evaluations: 32
+         Gradient evaluations: 31
+[-0.00171797]
+dream7@dream7-OMEN-by-HP-Laptop-15-dc1xxx:~/minimize$ python3 grad_w.py 
+Warning: Desired error not necessarily achieved due to precision loss.
+         Current function value: nan
+         Iterations: 1
+         Function evaluations: 25
+         Gradient evaluations: 29
+         Hessian evaluations: 0
+[-4.39473047]
+dream7@dream7-OMEN-by-HP-Laptop-15-dc1xxx:~/minimize$ python3 grad_w.py 
+grad_w.py:141: OptimizeWarning: Unknown solver options: xtol
+  res = opt.minimize(model, x0, method='L-BFGS-B', jac=grad, options={'xtol': 1e-8, 'disp': True})
+RUNNING THE L-BFGS-B CODE
+
+           * * *
+
+Machine precision = 2.220D-16
+ N =            1     M =           10
+ This problem is unconstrained.
+
+At X0         0 variables are exactly at the bounds
+Traceback (most recent call last):
+  File "grad_w.py", line 141, in <module>
+    res = opt.minimize(model, x0, method='L-BFGS-B', jac=grad, options={'xtol': 1e-8, 'disp': True})
+  File "/home/dream7/.local/lib/python3.7/site-packages/scipy/optimize/_minimize.py", line 600, in minimize
+    callback=callback, **options)
+  File "/home/dream7/.local/lib/python3.7/site-packages/scipy/optimize/lbfgsb.py", line 328, in _minimize_lbfgsb
+    isave, dsave, maxls)
+TypeError: failed to initialize intent(inout|inplace|cache) array, input not an array
+dream7@dream7-OMEN-by-HP-Laptop-15-dc1xxx:~/minimize$ python3 grad_w.py 
+  NIT   NF   F                       GTG
+    0    1 -1.125816140996579E+07   8.72915288E+16
+tnc: fscale = 3.3705e-09
+    0   66 -1.125816140996579E+07   8.72915288E+16
+tnc: Linear search failed
+[0.0042]
+dream7@dream7-OMEN-by-HP-Laptop-15-dc1xxx:~/minimize$ python3 grad_w.py 
+  NIT   NF   F                       GTG
+    0    1 -1.134650114104185E+07   8.58366183E+16
+tnc: fscale = 3.39996e-09
+    0   66 -1.134650114104185E+07   8.58366183E+16
+tnc: Linear search failed
+[0.0039]
+dream7@dream7-OMEN-by-HP-Laptop-15-dc1xxx:~/minimize$ python3 grad_w.py 
+grad_w.py:141: OptimizeWarning: Unknown solver options: xtol
+  res = opt.minimize(model, x0, method='SLSQP', jac=grad, options={'xtol': 1e-8, 'disp': True})
+Optimization terminated successfully.    (Exit mode 0)
+            Current function value: nan
+            Iterations: 2
+            Function evaluations: 23
+            Gradient evaluations: 2
+[-0.02534514]
+dream7@dream7-OMEN-by-HP-Laptop-15-dc1xxx:~/minimize$ python3 grad_w.py 
+grad_w.py:141: OptimizeWarning: Unknown solver options: xtol
+  res = opt.minimize(model, x0, method='SLSQP', bounds=[(0., 10e7)], jac=grad, options={'xtol': 1e-8, 'disp': True})
+Inequality constraints incompatible    (Exit mode 4)
+            Current function value: -11258161.409965789
+            Iterations: 1
+            Function evaluations: 1
+            Gradient evaluations: 1
+[0.0042]
+dream7@dream7-OMEN-by-HP-Laptop-15-dc1xxx:~/minimize$ python3 grad_w.py 
+grad_w.py:141: OptimizeWarning: Unknown solver options: xtol
+  res = opt.minimize(model, x0, method='L-BFGS-B', bounds=[(0., 10e7)], jac=grad, options={'xtol': 1e-8, 'disp': True})
+RUNNING THE L-BFGS-B CODE
+
+           * * *
+
+Machine precision = 2.220D-16
+ N =            1     M =           10
+
+At X0         0 variables are exactly at the bounds
+Traceback (most recent call last):
+  File "grad_w.py", line 141, in <module>
+    res = opt.minimize(model, x0, method='L-BFGS-B', bounds=[(0., 10e7)], jac=grad, options={'xtol': 1e-8, 'disp': True})
+  File "/home/dream7/.local/lib/python3.7/site-packages/scipy/optimize/_minimize.py", line 600, in minimize
+    callback=callback, **options)
+  File "/home/dream7/.local/lib/python3.7/site-packages/scipy/optimize/lbfgsb.py", line 328, in _minimize_lbfgsb
+    isave, dsave, maxls)
+TypeError: failed to initialize intent(inout|inplace|cache) array, input not an array
+dream7@dream7-OMEN-by-HP-Laptop-15-dc1xxx:~/minimize$ python3 grad_w.py 
+Traceback (most recent call last):
+  File "grad_w.py", line 141, in <module>
+    res = opt.minimize(model, x0, method='dogleg', jac=grad, options={'xtol': 1e-8, 'disp': True})
+  File "/home/dream7/.local/lib/python3.7/site-packages/scipy/optimize/_minimize.py", line 615, in minimize
+    callback=callback, **options)
+  File "/home/dream7/.local/lib/python3.7/site-packages/scipy/optimize/_trustregion_dogleg.py", line 34, in _minimize_dogleg
+    raise ValueError('Hessian is required for dogleg minimization')
+ValueError: Hessian is required for dogleg minimization
+dream7@dream7-OMEN-by-HP-Laptop-15-dc1xxx:~/minimize$ python3 grad_w.py 
+/home/dream7/.local/lib/python3.7/site-packages/scipy/optimize/_minimize.py:615: OptimizeWarning: Unknown solver options: xtol
+  callback=callback, **options)
+2019-11-07 09:13:31.256884: E external/org_tensorflow/tensorflow/compiler/xla/python/local_client.cc:731] Execution of replica 0 failed: Internal: failed to load in-memory CUBIN: CUDA_ERROR_OUT_OF_MEMORY: out of memory
+Traceback (most recent call last):
+  File "grad_w.py", line 142, in <module>
+    res = opt.minimize(model, x0, method='dogleg', jac=grad, hess=hess, options={'xtol': 1e-8, 'disp': True})
+  File "/home/dream7/.local/lib/python3.7/site-packages/scipy/optimize/_minimize.py", line 615, in minimize
+    callback=callback, **options)
+  File "/home/dream7/.local/lib/python3.7/site-packages/scipy/optimize/_trustregion_dogleg.py", line 37, in _minimize_dogleg
+    **trust_region_options)
+  File "/home/dream7/.local/lib/python3.7/site-packages/scipy/optimize/_trustregion.py", line 189, in _minimize_trust_region
+    p, hits_boundary = m.solve(trust_radius)
+  File "/home/dream7/.local/lib/python3.7/site-packages/scipy/optimize/_trustregion_dogleg.py", line 98, in solve
+    p_best = self.newton_point()
+  File "/home/dream7/.local/lib/python3.7/site-packages/scipy/optimize/_trustregion_dogleg.py", line 59, in newton_point
+    B = self.hess
+  File "/home/dream7/.local/lib/python3.7/site-packages/scipy/optimize/_trustregion.py", line 58, in hess
+    self._h = self._hess(self._x)
+  File "/home/dream7/.local/lib/python3.7/site-packages/scipy/optimize/optimize.py", line 326, in function_wrapper
+    return function(*(wrapper_args + args))
+  File "/home/dream7/.local/lib/python3.7/site-packages/jax/api.py", line 149, in f_jitted
+    out = xla.xla_call(flat_fun, *args_flat, device_assignment=device_assignment, backend=backend)
+  File "/home/dream7/.local/lib/python3.7/site-packages/jax/core.py", line 569, in call_bind
+    outs = primitive.impl(f, *args, **params)
+  File "/home/dream7/.local/lib/python3.7/site-packages/jax/interpreters/xla.py", line 369, in _xla_call_impl
+    return compiled_fun(*args)
+  File "/home/dream7/.local/lib/python3.7/site-packages/jax/interpreters/xla.py", line 403, in _execute_compiled
+    out_bufs = compiled.Execute(input_bufs).destructure()
+RuntimeError: Internal: failed to load in-memory CUBIN: CUDA_ERROR_OUT_OF_MEMORY: out of memory
+dream7@dream7-OMEN-by-HP-Laptop-15-dc1xxx:~/minimize$ 
